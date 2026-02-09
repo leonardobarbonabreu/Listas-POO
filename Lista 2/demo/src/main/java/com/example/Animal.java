@@ -1,0 +1,28 @@
+package com.example;
+
+public abstract class Animal {
+    //ATRIBUTOS
+    private String nome;
+    private int idade;
+
+    //CONSTRUTOR
+    public Animal(String nome, int idade){
+        this.nome = nome;
+        this.idade = idade;        
+    }
+
+    public abstract void fazerSom();
+    
+    public void brigar(Animal outroAnimal){
+        System.out.println(this.nome + " está brigando com " + outroAnimal.nome + ": ");
+        emitirSom();
+    }
+
+    public String getNome(){
+        return this.nome;
+    }
+
+    public void descansar(){
+        System.out.println("descansando");
+    }        
+}
