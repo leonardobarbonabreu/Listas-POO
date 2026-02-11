@@ -16,4 +16,8 @@ public abstract class Funcionario {
     public double calcularBonificacao(double valor){
         return valor * 0.01; //Um porcento do salario   
     }
+
+    public void baterPonto(){
+         System.out.println("Funcionário " + nome + " bateu o ponto às " + java.time.LocalTime.now() );   
+    }
 }

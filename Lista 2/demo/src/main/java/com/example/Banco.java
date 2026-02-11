@@ -10,9 +10,9 @@ public abstract class Banco {
     }
 
     //Métodos
-    public void depositar(double valor){
-        saldo += valor;
-    }
+    // public void depositar(double valor){
+    //     saldo += valor;
+    // }
 
     public abstract void realizarTransacao(double valor);
     
