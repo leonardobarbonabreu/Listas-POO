@@ -1,6 +1,6 @@
-package main.java.com.example;
+package com.example;
 
-public class Retangulo {
+public class Retangulo implements FormaGeometrica{
     
     public float largura;
     public float comprimento;

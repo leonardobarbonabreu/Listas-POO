@@ -1,14 +1,18 @@
-package main.java.com.example;
+package com.example;
 
-public class Deposito implements Saque{
+public class Saque extends Banco{
+    
+    public Saque(double saldo){
+        super(saldo);
+    }   
+
     @Override
-    public double realizarTransacao(double valor){
+    public void realizarTransacao(double valor){
         if (valor <= this.saldo){
             this.saldo -= valor;
-            return valor;
+            System.out.println(valor);
         } else {
-            System.out.println("Saldo insuficiente para saque.");
-            return 0;
+            System.out.println("Saldo insuficiente para saque.");            
         }
     };
 }

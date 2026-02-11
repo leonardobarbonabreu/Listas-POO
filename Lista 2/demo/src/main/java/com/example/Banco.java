@@ -14,6 +14,6 @@ public abstract class Banco {
         saldo += valor;
     }
 
-    public abstract realizarTransacao();
+    public abstract void realizarTransacao(double valor);
     
 }

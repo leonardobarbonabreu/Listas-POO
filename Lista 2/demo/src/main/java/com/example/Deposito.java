@@ -1,7 +1,13 @@
-package main.java.com.example;
+package com.example;
 
-public class Deposito implements Banco{
-    @Override
+public class Deposito extends Banco{
+   
+    public Deposito(double saldo){
+        super(saldo);
+    }   
+
+
+   @Override
     public void realizarTransacao(double valor){
        if (valor > 0) {
           this.saldo = this.saldo + valor; 

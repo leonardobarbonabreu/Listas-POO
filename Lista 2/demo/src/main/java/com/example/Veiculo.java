@@ -7,7 +7,7 @@ public abstract class Veiculo {
     protected String marca;
     protected String modelo;
     protected LocalDate ano;
-    protected string cor; 
+    protected String cor; 
 
     //CONSTRUTOR
     public Veiculo(String marca, String modelo, LocalDate ano, String cor){
@@ -25,7 +25,7 @@ public abstract class Veiculo {
     //metodo abstrato
     public abstract void mover();
 
-    public void mostrarCor(){
+    public String mostrarCor(){
         return this.cor;
     }
 }

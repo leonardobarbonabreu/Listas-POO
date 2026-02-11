@@ -7,11 +7,13 @@ public abstract class Funcionario {
     //CONSTRUTORES
     public Funcionario(String nome, double salario){
         this.nome = nome;
-        this.salario = pagarSalario(salario);        
+        this.salario = salario;
     }
 
     //Métodos
-    public abstract double calcularSalario();
+    public abstract double pagarSalario(double salario);
 
-
+    public double calcularBonificacao(double valor){
+        return valor * 0.01; //Um porcento do salario   
+    }
 }

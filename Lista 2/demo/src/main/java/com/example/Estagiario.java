@@ -10,4 +10,5 @@ public class Estagiario extends Funcionario{
     public double pagarSalario(double salario){
         return salario - (salario * 0.2);        
     }
+
 }

@@ -15,7 +15,6 @@ public abstract class Animal {
     
     public void brigar(Animal outroAnimal){
         System.out.println(this.nome + " está brigando com " + outroAnimal.nome + ": ");
-        emitirSom();
     }
 
     public String getNome(){
