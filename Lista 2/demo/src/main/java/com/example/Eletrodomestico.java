@@ -1,6 +1,6 @@
 package main.java.com.example;
 
-public class Eletronico extends Produto{
+public class Eletrodomestico extends Produto{
     //Metodo
     @Override
     public double calcularDesconto(double valor){
